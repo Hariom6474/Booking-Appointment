@@ -1,11 +1,32 @@
+/* Default styles for larger screens */
 .main {
     border: 3px solid orangered;
-    margin: 50px 450px 100px 450px;
+    margin: 50px auto; /* Center the container */
     padding: 20px;
     border-radius: 15px;
-    text-align: auto;
+    text-align: center;
     background-color: white;
     opacity: 90%;
+}
+
+/* Add styles for smaller screens using media query */
+@media screen and (max-width: 600px) {
+    .main {
+        margin: 20px auto; /* Adjust margin for smaller screens */
+    }
+
+    input {
+        width: calc(100% - 10px); /* Adjust input width for smaller screens */
+    }
+
+    .datetime-inputs {
+        flex-direction: column; /* Stack date and time inputs vertically */
+    }
+
+    #date {
+        margin-right: 0; /* Remove margin for date input */
+        margin-bottom: 10px; /* Add bottom margin for date input */
+    }
 }
 
 hr {
@@ -30,7 +51,6 @@ body {
 }
 
 input {
-    width: 100%;
     padding: 5px;
 }
 

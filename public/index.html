@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Sharpener</title>
 </head>
 
@@ -13,24 +13,19 @@
         <h2>Book a call</h2>
         <p>Book a call slot and out representative will call you within 1hr of selected time.</p>
         <hr>
-        <form accept="#" method="get" id="userForm" onsubmit="getFormValue(event)">
+        <form id="userForm" onsubmit="getFormValue(event)">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br>
             <label for="phone">Phone:</label><br>
             <input type="phone" id="phone" name="phone"><br>
-            <!-- <label for="time">Time for call:</label><br>
-            <div class="datetime-inputs">
-                <input type="date" id="date">
-                <input type="time" id="time">
-            </div><br> -->
             <button type="submit">Get a call</button>
         </form>
         <ul class="list-group"></ul>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
